@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main() {
-   /* char c;
-    printf("f, e, h ¸Ş´º ÄÚµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä :  ");
+   char c;
+    printf("f, e, h ë©”ë‰´ ì½”ë“œë¥¼ ì…ë ¥í•˜ì„¸ìš” :  ");
     scanf_s("%c", &c, 1);
-    switch (c) //Á¤¼öÇü µ¥ÀÌÅÍ¸¸. -> case¿Í ÀÏÄ¡, ¾Æ½ºÅ°°ª
+    switch (c) //ì •ìˆ˜í˜• ë°ì´í„°ë§Œ. -> caseì™€ ì¼ì¹˜, ì•„ìŠ¤í‚¤ê°’
     {
-    case 'F': //ÁßÃ¸Àº ÇÇÇÏ±â
+    case 'F': //ì¤‘ì²©ì€ í”¼í•˜ê¸°
     case 'f': printf("file menu\n"); break;
     case 'E':
     case 'e': printf("edit menu\n"); break;
@@ -16,29 +16,29 @@ int main() {
 
     int score;
     char grade;
-    printf("Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+    printf("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
     scanf_s("%d", &score);
-    switch (score / 10) //¸ò¸¸ È°¿ëÇÏ´Â ¹æ¹ı ÀÌ¿ëÇÏ±â
+    switch (score / 10) //ëª«ë§Œ í™œìš©í•˜ëŠ” ë°©ë²• ì´ìš©í•˜ê¸°
     {
     case  10:
     case 9: grade = 'A'; break;
     case 8: grade = 'B'; break;
     case7: grade = 'C'; break;
     case 6: grade = 'D'; break;
-    default: grade = 'F'; // º¯¼ö°¡ charÀÌ¾îµµ ÀúÀåÀº ÀÛÀº µû¿ÈÇ¥
+    default: grade = 'F'; // ë³€ìˆ˜ê°€ charì´ì–´ë„ ì €ì¥ì€ ì‘ì€ ë”°ì˜´í‘œ
     };
-    printf("%cµî±Ş", grade);
+    printf("%cë“±ê¸‰", grade);
 
     int first, secondLength, secondTemp;
-    printf("1. ÀÎÄ¡ <-> ¼¾Æ¼\n2. È­¾¾ <-> ¼·¾¾\n¸Ş´º¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+    printf("1. ì¸ì¹˜ <-> ì„¼í‹°\n2. í™”ì”¨ <-> ì„­ì”¨\në©”ë‰´ë¥¼ ì…ë ¥í•˜ì„¸ìš” ");
     scanf_s("%d", &first);
     switch (first)
     {
     case 1:
-        printf("(1)ÀÎÄ¡ -> ¼¾Æ¼\n(2)¼¾Æ¼ -> ÀÎÄ¡\n¸Ş´º¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+        printf("(1)ì¸ì¹˜ -> ì„¼í‹°\n(2)ì„¼í‹° -> ì¸ì¹˜\në©”ë‰´ë¥¼ ì…ë ¥í•˜ì„¸ìš” ");
         scanf_s("%d", &secondLength); break;
     case 2:
-        printf("(1)È­¾¾ -> ¼·¾¾\n(2)¼·¾¾ -> È­¾¾\n¸Ş´º¸¦ ÀÔ·ÂÇÏ¼¼¿ä ");
+        printf("(1)í™”ì”¨ -> ì„­ì”¨\n(2)ì„­ì”¨ -> í™”ì”¨\në©”ë‰´ë¥¼ ì…ë ¥í•˜ì„¸ìš” ");
         scanf_s("%d", &secondTemp); break;
     };
     float num;
@@ -46,7 +46,7 @@ int main() {
     switch (secondLength)
     {
     case 1:
-        printf("ÀÎÄ¡¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+        printf("ì¸ì¹˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
         scanf_s("%f", &num); //%f float
         num2 = num * 2.54; 
         printf("%.3f cm", num2); break;
@@ -54,9 +54,8 @@ int main() {
         printf("end"); break;
     //~~~~
     }; //~~~~
-    */
 
-    for (int i = 10; i; i--) { //i°¡ 0ÀÌ ¾Æ´Ò¶§±îÁö. 0ÀÌ¸é °ÅÁş.
+    for (int i = 10; i; i--) { //iê°€ 0ì´ ì•„ë‹ë•Œê¹Œì§€. 0ì´ë©´ ê±°ì§“.
         printf("%d ", i);
     }
     printf("\n");
